@@ -15,8 +15,11 @@ tr:nth-child(even) {
     background-color: #7fa8b8;
 }
 </style>
+  <script src = "TableData.js"></script>
 </head>
 <body>
+
+<input type = "text" id = "Search" placeholder="Search for EmployeeName" onkeyup="SearchName()">
 
 <table id = "PersonDetails">
   <tr>
@@ -24,8 +27,18 @@ tr:nth-child(even) {
     <th>Project</th>
     <th>Location</th>
   </tr>
-  <script src = "TableData.js"></script>
+
 </table>
+<br>
+
+EmployeeName: <input type="text" id="EmpName" ><br><br>
+Project: <input type="text" id="Project" ><br><br>
+Location: <input type="text" id="Location" ><br><br>
+<input type="button" value="Add Detail" onclick="AddDetail()" />
+
+<br><br>
+EmployeeNameToDelete: <input type="text" id="EmpNameToDelete" ><br><br>
+<input type="button" value="Delete Employee" onclick="DeleteDetail()" />
 
 </body>
 </html>
